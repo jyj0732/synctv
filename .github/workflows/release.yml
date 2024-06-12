@@ -1,6 +1,8 @@
 name: release
 
 on:
+  release:
+    types: [created, published] # 表示在创建新的 Release 时触发
   push:
     tags:
       - "v*"
